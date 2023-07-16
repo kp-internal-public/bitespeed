@@ -1,7 +1,6 @@
-version: '3.1'
+version: "3.1"
 
 services:
-
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -15,18 +14,17 @@ services:
     ports:
       - 3306:3306
 
-  # service:
-  #   build:
-  #     dockerfile: Dockerfile
-  #   depends_on:
-  #     db:
-  #       condition: service_healthy
-  #   environment:
-  #     MYSQL_HOST: db # must be name of mysql container
-  #     MYSQL_USER: root
-  #     MYSQL_PASS: root
-  #     MYSQL_PORT: 3306
-  #     MYSQL_DB: mysql
-  #   ports:
-  #     - 8081:80
-
+  service:
+    build:
+      dockerfile: Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      MYSQL_HOST: db # must be name of mysql container
+      MYSQL_USER: root
+      MYSQL_PASS: root
+      MYSQL_PORT: 3306
+      MYSQL_DB: mysql
+    ports:
+      - 80:80
