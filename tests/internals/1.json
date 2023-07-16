@@ -1,0 +1,15 @@
+{
+  "contact": {
+    "primaryContactId": 0,
+    "emails": [
+      "lorraine@hillvalley.edu",
+      "mcfly@hillvalley.edu"
+    ],
+    "phoneNumbers": [
+      "123456"
+    ],
+    "secondaryContactIds": [
+      1
+    ]
+  }
+}

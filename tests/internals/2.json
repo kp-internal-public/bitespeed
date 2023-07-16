@@ -1,0 +1,16 @@
+{
+  "contact": {
+    "primaryContactId": 2,
+    "emails": [
+      "george@hillvalley.edu",
+      "biffsucks@hillvalley.edu"
+    ],
+    "phoneNumbers": [
+      "919191",
+      "717171"
+    ],
+    "secondaryContactIds": [
+      2
+    ]
+  }
+}
