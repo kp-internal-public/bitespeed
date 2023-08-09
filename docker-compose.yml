@@ -11,6 +11,8 @@ services:
       test: "mysqladmin ping --host=127.0.0.1 --user=root --password=root || exit 1"
       timeout: 5s
       retries: 20
+    volumes:
+      - db_data:/var/lib/mysql
     ports:
       - 3306:3306
 
@@ -28,3 +30,6 @@ services:
       MYSQL_DB: mysql
     ports:
       - 80:80
+
+volumes:
+  db_data:
